@@ -1,0 +1,32 @@
+# @package _global_
+render:
+  min_depth: 0.8
+  max_depth: 1.8
+  znear: 0.8
+  zfar: 1.8
+  fov: 51.98948897809546
+  n_pts_per_ray: 64
+  n_pts_per_ray_fine: 64
+  stratified_sampling: true
+  volume_extent_world: 1.0
+  volume_size_mults:
+  - 0.7
+  - 1.0
+  - 0.6
+  volume_offsets:
+  - 0.0
+  - 0.0
+  - 0.0
+data:
+  dataset_type: srn
+  encode_rays: true
+  input_size:
+  - 128
+  - 128
+  category: cars
+  normalize_pose: true
+  rotation_augmentation: false
+
+model:
+  triplanes:
+    offset: 1.3

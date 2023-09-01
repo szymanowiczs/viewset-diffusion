@@ -1,0 +1,30 @@
+# @package _global_
+model:
+  input_dim: 9
+  feature_extractor_2d:
+    use: true
+    res_blocks: 2  
+    pass_features: both
+  volume_size: 32
+  explicit_volume: true
+  explicit_rendering: true
+  unet:
+    volume_repr: voxel
+    self_condition: true
+    self_condition_images: seen
+    self_condition_detach: true
+    input_dim: 64
+    model_channels: 64
+    attention_aggregation: true
+    blocks_per_res: 2  
+    channel_mult:
+    - 1
+    - 2
+    - 4
+    - 8
+    attn_resolutions:
+    - 16
+    - 8
+    - 4
+render:
+  volume_size: 64

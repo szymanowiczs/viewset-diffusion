@@ -1,0 +1,60 @@
+---
+defaults:
+  - wandb: defaults
+  - hydra: defaults
+  - _self_
+general:
+  random_seed: 0
+  devices: 1
+data:
+  background: white
+  encode_pose: true
+  encode_rays: true
+  translation_augmentation: 0.0
+  rotation_augmentation: false
+eval:
+  save_every: 2000
+model:
+  hidden_dim: 64
+  n_heads: 1
+  diffuser:
+    steps: 0
+optimization:
+  batch_size: 64
+  betas:
+  - 0.9
+  - 0.99
+  lr: 0.005
+  n_iter: 1000
+  loss: 'l2'
+  weigh_terms: true
+  weigh_clean: false
+  save_every: 2000
+  continue_from_checkpoint: none
+  keep_clean_only_proportion: 0.0
+  ema:
+    use: false
+    update_every: 10
+    decay: 0.995
+render:
+  aspect_ratio: 1
+  fov: 15.0
+  max_depth: 6.5
+  min_depth: 3.5
+  n_pts_per_ray: 50
+  stratified_sampling: false
+  volume_extent_world: 1.2
+  volume_size: 32
+  zfar: 10.0
+  znear: 0.1
+  post_activation: true
+  raw_noise_std: 0.0
+  n_pts_per_ray_fine: 0
+  volume_size_mults:
+  - 1.0
+  - 1.0
+  - 1.0
+  volume_offsets:
+  - 0.0
+  - 0.0
+  - 0.0

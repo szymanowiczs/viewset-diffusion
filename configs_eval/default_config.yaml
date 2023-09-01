@@ -1,0 +1,16 @@
+---
+defaults:
+  - hydra: defaults
+  - _self_
+model_path: none
+N_clean: 1
+N_noisy: 3
+seed: 1
+cf_guidance: 0.0
+save_output: false
+eval:
+  n_devices: 1
+  device_idx: 0
+  split: test
+  n_samples_per_ex: 20
+  deterministic: false

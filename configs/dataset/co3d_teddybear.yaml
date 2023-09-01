@@ -1,0 +1,22 @@
+# @package _global_
+render:
+  max_depth: 7.5
+  min_depth: 0.0001
+  n_pts_per_ray: 96
+  n_pts_per_ray_fine: 32
+  stratified_sampling: true
+  volume_extent_world: 1.2
+  volume_size: 32
+
+data:
+  dataset_type: co3d
+  data_path: null # change this line
+  encode_rays: true
+  input_size:
+  - 128
+  - 128
+  category: teddybear
+  sequence_idx: None
+  white_background: false
+  rotation_augmentation: true
+

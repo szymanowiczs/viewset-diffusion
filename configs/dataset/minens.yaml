@@ -1,0 +1,12 @@
+# @package _global_
+data:
+  data_path: null # change this to where minens da
+  background: random
+  input_size:
+  - 48
+  - 48
+  normalize_pose: true
+  dataset_type: minens
+  subset: 40000
+render:
+  n_pts_per_ray: 150

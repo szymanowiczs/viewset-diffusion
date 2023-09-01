@@ -9,7 +9,7 @@ from PIL import Image
 
 from matplotlib import pyplot as plt
 
-import minecraft
+import minens
 from camera import random_viewpoint
 from utils import set_seed
 
@@ -105,7 +105,7 @@ def main():
         
         training_imgs.append([])
         skin = Image.open(training_skins[ex_idx]).convert("RGBA")
-        character = minecraft.character_for_skin(skin)
+        character = minens.character_for_skin(skin)
 
         skin_texture = ctx.texture(skin.size, 4, skin.tobytes())
         skin_texture.filter = (moderngl.NEAREST, moderngl.NEAREST)       
@@ -145,7 +145,7 @@ def main():
         
         validation_imgs.append([])
         skin = Image.open(training_skins[ex_idx]).convert("RGBA")
-        character = minecraft.character_for_skin(skin)
+        character = minens.character_for_skin(skin)
 
         skin_texture = ctx.texture(skin.size, 4, skin.tobytes())
         skin_texture.filter = (moderngl.NEAREST, moderngl.NEAREST)       
@@ -183,7 +183,7 @@ def main():
         
         testing_imgs.append([])
         skin = Image.open(testing_skins[ex_idx]).convert("RGBA")
-        character = minecraft.character_for_skin(skin)
+        character = minens.character_for_skin(skin)
 
         skin_texture = ctx.texture(skin.size, 4, skin.tobytes())
         skin_texture.filter = (moderngl.NEAREST, moderngl.NEAREST)       

@@ -1,0 +1,29 @@
+# @package _global_
+model:
+  diffuser:
+    steps: 1000
+    beta_schedule: cosine
+optimization:
+  lr: 0.00002
+  n_iter: 300001
+  batch_size: 8
+  accumulate_grad_steps: 1
+  clamp_min_snr: true
+  weigh_terms: true
+  weigh_clean: true
+  hard_mining_proportion: 1.0
+  noisy_dropout_proportion: 1.0
+  penalize: all
+  weigh_loss_unseen: 0.1
+  normalize_unseen_to_a_third: true
+  ema:
+    use: true
+data:
+  always_drop_at_least_one_view: true
+  two_training_imgs_per_example: false
+  one_training_img_per_example: false
+  encode_rays: true
+general:
+  devices: 1
+eval:
+  sampling_timesteps: 250

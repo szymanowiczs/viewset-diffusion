@@ -61,7 +61,7 @@ def get_cameras_from_data_dict(cfg, data, device, slicing_idxs = None):
                     principal_point=data["principal_points"][:, slicing_idxs].reshape([-1, 2]),
                     device=device
         )
-    elif cfg.data.dataset_type == "skins" or cfg.data.dataset_type == "srn":
+    elif cfg.data.dataset_type == "minens" or cfg.data.dataset_type == "srn":
         example_cameras = FoVPerspectiveCameras(
                     R = data["target_Rs"][:, slicing_idxs].reshape([-1, 3, 3]), 
                     T = data["target_Ts"][:, slicing_idxs].reshape([-1, 3]),  
