@@ -68,6 +68,10 @@ python train.py +experiment=diffusion_128 +arch=up_3d_conv +dataset=srn_cars
 
 **+dataset+**: set to `co3d_{hydrant,plant,teddybear,vase}` for CO3D classes, `srn_cars` for ShapeNet Cars and `minens` for Minens.
 
+# Pretrained models
+
+I am in the process of releasing all checkpoints. For now, the Shapenet Cars dataset is available [here][https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing].
+
 # Evaluation
 
 Once a model is trained, 3D reconstruction can be run with:
