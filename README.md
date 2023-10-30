@@ -70,7 +70,7 @@ python train.py +experiment=diffusion_128 +arch=up_3d_conv +dataset=srn_cars
 
 # Pretrained models
 
-I am in the process of releasing all checkpoints. For now, the Shapenet Cars dataset is available [here][https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing].
+I am in the process of releasing all checkpoints. For now, the Shapenet Cars dataset is available [here](https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing).
 
 # Evaluation
 
