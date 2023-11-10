@@ -70,8 +70,10 @@ python train.py +experiment=diffusion_128 +arch=up_3d_conv +dataset=srn_cars
 
 # Pretrained models
 
-I am in the process of releasing all checkpoints. 
-For now, the Shapenet Cars checkpoint is available [here](https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing) and CO3D Hydrants checkpoint is available [here](https://drive.google.com/drive/folders/1P8n6gZlTdzhiMFSSOgaY_p_XTtZm-zB-?usp=sharing).
+ShapeNet and CO3D checkpoints are now released - enjoy experimentation!
+You can now download our models for [ShapeNet Cars](https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing), [CO3D Hydrants](https://drive.google.com/drive/folders/1P8n6gZlTdzhiMFSSOgaY_p_XTtZm-zB-?usp=sharing), [CO3D Teddybears](https://drive.google.com/drive/folders/14NL_uz-3c1nSPCCWO2A_vjVjeNSxkBHH?usp=share_link), [CO3D Vases](https://drive.google.com/drive/folders/16U3mapGEFMNa6Pajb8ERJBTBqTrCeZyz?usp=share_link) and [CO3D Plants](https://drive.google.com/drive/folders/1_jEPkuukdKXzihmg72to9TVkPon-Mkfb?usp=sharing).
+
+Checkpoint for Minens will follow soon. 
 
 # Evaluation
 
@@ -89,9 +91,6 @@ Quantitative evaluation of 3D reconstruction is run with
 ```
 python evaluation_quantitative.py model_path=[model path]
 ```
-
-Pretrained models coming soon.
-
 # BibTeX
 
 If you find this code useful, please consider citing
