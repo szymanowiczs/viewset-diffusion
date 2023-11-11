@@ -44,6 +44,10 @@ Put the path of the download directory in `data_manager/co3d.py` as `CO3D_DATASE
 Set the value of `data.data_path` in `config/dataset/co3d_hydrant.yaml` to the absolute path of where you want to store a compressed, fast-to-access .npy version of the CO3D classes. 
 The first time training is run, the data manager will form train, val and test dataset and store them in that path.
 
+If you want to run quantitative evaluation and reproduce scores from the paper you also need to download the indexes of samples I used in evaluation.
+Download `random_order_of_sample_idxs.npy` for each class from the folders with models for [CO3D Hydrants](https://drive.google.com/drive/folders/1P8n6gZlTdzhiMFSSOgaY_p_XTtZm-zB-?usp=sharing), [CO3D Teddybears](https://drive.google.com/drive/folders/14NL_uz-3c1nSPCCWO2A_vjVjeNSxkBHH?usp=share_link), [CO3D Vases](https://drive.google.com/drive/folders/16U3mapGEFMNa6Pajb8ERJBTBqTrCeZyz?usp=share_link) or [CO3D Plants] (https://drive.google.com/drive/folders/1_jEPkuukdKXzihmg72to9TVkPon-Mkfb?usp=sharing).
+Place the order of files for evaluation in the same folder as the other .npy files.
+
 ### SRN-ShapeNet Cars
 
 Download the ShapeNet-SRN Car dataset from [PixelNeRF project page](https://drive.google.com/drive/folders/1PsT3uKwqHHD2bEEHkIXB99AlIjtmrEiR).
