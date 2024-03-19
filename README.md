@@ -74,10 +74,8 @@ python train.py +experiment=diffusion_128 +arch=up_3d_conv +dataset=srn_cars
 
 # Pretrained models
 
-Update [23 Feb 2024]: models are temporarily unavailable as we change where we host them. Expect them to be available again next week.
-
 ShapeNet and CO3D checkpoints are now released - enjoy experimentation!
-You can now download our models for [ShapeNet Cars](https://drive.google.com/drive/folders/1837UhwVTFNbozUI7RKFdVpFOjTETVvMz?usp=sharing), [CO3D Hydrants](https://drive.google.com/drive/folders/1P8n6gZlTdzhiMFSSOgaY_p_XTtZm-zB-?usp=sharing), [CO3D Teddybears](https://drive.google.com/drive/folders/14NL_uz-3c1nSPCCWO2A_vjVjeNSxkBHH?usp=share_link), [CO3D Vases](https://drive.google.com/drive/folders/16U3mapGEFMNa6Pajb8ERJBTBqTrCeZyz?usp=share_link) and [CO3D Plants](https://drive.google.com/drive/folders/1_jEPkuukdKXzihmg72to9TVkPon-Mkfb?usp=sharing).
+You can now download our models for [all CO3D and ShapeNet classes](https://thor.robots.ox.ac.uk/publications/2023/Szymanowicz23/viewset_diffusion_release-0.tar.gz).
 
 # Evaluation
 
