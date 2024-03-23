@@ -49,9 +49,9 @@ def main(cfg: DictConfig):
         length = len(generator.dataset)
 
     if "srn" in cfg.model_path:
-        non_one_length = True
-    else:
         non_one_length = False
+    else:
+        non_one_length = True
 
     chunks = num_to_chunks(length, cfg.eval.n_devices)
     start_idx = sum(chunks[:cfg.eval.device_idx])
